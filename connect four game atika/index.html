@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four by Atika</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+</head>
+<body>
+
+
+
+    <header>
+
+    <h1>Connect Four</h1>
+
+    <p>Connect 4 is a two-player game. the objective is player needs to make a
+        straight line of four own pieces; the line can be vertical, horizontal
+        or diagonal.
+    </p>
+
+    
+
+             
+    <h3 class="player-turn"></h3>
+
+</header>
+
+<div class="overlay-itro"></div>
+
+    <div class="game">
+        <table>
+            <tr>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+            </tr>
+
+            <tr>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+            </tr>
+
+            <tr>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+            </tr>
+
+            <tr>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+            </tr>
+
+            <tr>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+            </tr>
+
+            <tr>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+                <td class="slot"></td>
+            </tr>
+        </table>
+
+    </div>
+
+   
+    <div class="endGame" id="myModal">
+        <div class="text">
+            <h3 class="title">Connect Four</h3>
+            <p class="p1">By Nurul Atika</p>
+            <img src="./images/4.png" alt="">
+        </div>
+        <button type="button" class="btn1" data-dismiss="modal" onclick="btn()">Enter Players Name</button>
+        <br><br>
+        <button type="button" class="closeBtn" data-dismiss="modal">Start Game</button>
+        
+    </div>
+  
+
+    <button class="reset">Replay</button>
+  
+
+    
+
+
+    <script src="script.js"></script>
+
+
+
+    
+</body>
+</html>
