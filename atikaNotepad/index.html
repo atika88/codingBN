@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Notepad Atika</title>
+</head>
+
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+
+        <video autoplay muted loop poster="https://dummyimage.com/900x400/000/fff">    
+            <source src="video/video.mp4">
+        </video>
+
+          
+
+    <div class="container text-white">
+        <div class="row">
+            <div class="col-sm-12">
+            <h1>Welcome to Atika's Notepad</h1>
+            </div>
+        </div>
+
+        <!--tools-->
+    <!--<div class="row">
+        <div class="col-3">
+            <h3>Tools</h3>
+        </div>
+    </div>-->
+
+    <!--font-->
+    <div class="row" id="row1">
+        <div class="col-3">
+            <div class="wrapper1">
+            <select class="custom-select custom-select-sm" id="font" onchange="changeFont()">
+                <option value = "Normal" selected="selected">Normal</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Courier">Courier</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Palatino">Palatino</option>
+                <option value="Garamond">Garamond</option>
+                <option value="Bookman">Bookman</option>
+                <option value="Tahoma">Tahoma</option>
+                <option value="Trebuchet MS">Trebuchet MS</option>
+                <option value="Arial Black">Arial Black</option>
+                <option value="Impact">Impact</option>
+                <option value="Comic Sans MS">Comic Sans MS</option>
+                <option value="Helvetica">Helvetica</option>
+                <option value="Brush Script MT">Brush Script MT</option>
+
+              </select>
+            </div>
+            
+         
+    <!--font size-->
+    <div class="wrapper2">
+        <select class="custom-select custom-select-sm" id="size" onchange="changeSize(this)">
+            
+            <option selected value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+            <option value="22">22</option>
+            <option value="24">24</option>
+            <option value="26">26</option>
+            <option value="28">28</option>
+            <option value="36">36</option>
+            <option value="48">48</option>
+           
+
+          </select>
+        </div>
+
+    <!--font color-->
+    <div class="wrapper3">
+        <select class="custom-select custom-select-sm" id="color" onchange="changeFontColor()">
+            <option selected value="Black">Black</option>
+            <option value="Pink">Pink</option>
+            <option value="Red">Red</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Green">Green</option>
+            <option value="Brown">Brown</option>
+            <option value="Blue">Blue</option>
+            <option value="Orange">Orange</option>
+            <option value="Purple">Purple</option>
+            
+          </select>
+        </div>
+
+    <!--button-->
+        <input class="button" id="bold" type="button" name="bold" value="Bold" onclick="bold_click()"> <br>
+        <input class="button" id="italic" type="button" name="italic" value="Italic" onclick="italic_click()"> <br>
+        <input class="button" id="underline" type="button" name="underline" value="Underline" onclick="underline_click()"> <br>
+        
+
+    <div class="wrapper4">
+        <input class="button" id="save" type="button" name="save" value="Save" > <br>
+        <input class="button" id="reset" type="button" name="reset" value="Reset" onclick="reset_click()"> <br>
+        <input class="button" id="clear" type="button" name="clear" value="Clear" onclick="clear_click()"> <br>
+    </div>
+
+    </div><!--end of col3-->
+     
+    <!--textarea-->
+    <div class="col-6">
+
+       <div class="title">
+            <label for="title">Title:</label><br>
+            <input type="text" id="title">
+        </div>
+
+            <label for="output">Notes:</label>
+                <textarea class="output" id="output" cols="130" rows="30"></textarea>
+            </div>
+
+    
+        </div><!--row 2 end-->
+
+         <!--save notes-->
+         <section>
+         <div class="container" id="cont1">
+            
+                <div class="notes" id="notes">
+        
+
+            <!--<div id="note">
+                <p class="note-counter">Note 1</p>
+                <h3 class="note-title"> Hello </h3>
+                <p class="note-text">some note  text</p>
+                <button class="note-btn">Delete note</button>
+                <button class="note-btn edit-btn">Edit note</button>
+            </div>-->
+        </div>
+        </div>
+    </div>
+</section>
+        
+   
+
+        </div><!--jumbotron end-->
+
+<footer> Copyright @ Atika Notepad Project 3</footer>
+
+<script src="js/script.js"></script>
+
+</div>
+</body>
+
+</html>
